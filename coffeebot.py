@@ -11,7 +11,7 @@ HOST = '' #remote host
 PORT = 5000
 SOCK = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 SOCK.bind((HOST, PORT))
-SOCK.listen()
+
 
 # create a Zulip client/bot
 client = zulip.Client(email=ZULIP_USERNAME,
@@ -56,9 +56,7 @@ subscribe()
 send_message('COFFEE!')
 
 ''' listen for arduino
-    if light value changes, do stuff.
-'''
-
-'''
-    post coffee gif?
+    if I receive a "coffee is ready" or "Coffee is brewing" message,
+    post it to zulip.
+    (follow with "gif me coffee" message?)
 '''
