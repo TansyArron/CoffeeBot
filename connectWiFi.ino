@@ -27,12 +27,7 @@ void loop() {
 
 void connectNetwork() {
   // attempt to connect using WPA2 encryption:
-  Serial.print("Attempting to connect to WPA2 network: ");
-  Serial.println(ssid);
-  Serial.print("using password: ");
-  Serial.println(pass);
   status = WiFi.begin(ssid, pass);
-  Serial.println(status);
   // if you're not connected, try again:
   if ( status != WL_CONNECTED) { 
     connectNetwork();
