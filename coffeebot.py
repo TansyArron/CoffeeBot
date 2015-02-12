@@ -17,8 +17,8 @@ class Coffeebot():
         indicating that the coffee is brewing or done.
     '''
     def __init__(self):
-        self.zulip_username = 'CoffeeBot-bot@students.hackerschool.com'
-        self.zulip_api_key = 'x9B2OV00fgbgT5BOcXlJawDNv7OSfQAt'
+        self.zulip_username = '' # Zulip Username
+        self.zulip_api_key = '' # Zulip API Key
         self.zulip_client = zulip.Client(email=self.zulip_username,
                             api_key=self.zulip_api_key)
         self.connected = False
