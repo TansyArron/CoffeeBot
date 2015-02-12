@@ -1,8 +1,8 @@
 #include <SPI.h>
 #include <WiFi.h>
 
-char ssid[] = " ";    // Your SSID
-char pass[] = " ";    // Your Network Password
+const char ssid[] = " ";    // Your SSID
+const char pass[] = " ";    // Your Network Password
 
 int status = WL_IDLE_STATUS;      // the Wifi radio's status
 IPAddress server(10,0,0,2);       // Your Server IP 
